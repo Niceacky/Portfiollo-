@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Photo Gallery</title>
+  <link rel="icon" href="../images/Icons/brush.png" type="image/png">
+  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../css/positioning.css">
+  <link rel="stylesheet" href="../css/photo.css">
+  <script src="../js/Photo.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div id="img-bg-2" class="bg"></div>
+    <p class="bg-text">Gallery of Photos</p>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/ArtGallery.html">Art Gallery</a></li>
+        <li><a href="../pages/Aboutus.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <table class="image-table">
+      <tr>
+        <td>
+          <img src="../images/mountain2.png" alt="Image 1" data-id="flowerart">
+          <button class="favorite-button" data-id="flowerart">Favorite</button>
+        </td>
+        <td>
+          <img src="../images/Flower2.png" alt="Image 2" data-id="forestart">
+          <button class="favorite-button" data-id="forestart">Favorite</button>
+        </td>
+        <td>
+          <img src="../images/mountain1.png" alt="Image 3" data-id="mountainart">
+          <button class="favorite-button" data-id="mountainart">Favorite</button>
+        </td>
+        <td>
+          <img src="../images/WInter1.png" alt="Image 4" data-id="winterart">
+          <button class="favorite-button" data-id="winterart">Favorite</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="../images/winter2.png" alt="Image 5" data-id="mountainart2">
+          <button class="favorite-button" data-id="mountainart2">Favorite</button>
+        </td>
+        <td>
+          <img src="../images/Flowers1.png" alt="Image 6" data-id="winterart2">
+          <button class="favorite-button" data-id="winterart2">Favorite</button>
+        </td>
+        <td>
+          <img src="../images/forest1.png" alt="Image 7" data-id="forestart2">
+          <button class="favorite-button" data-id="forestart2">Favorite</button>
+        </td>
+        <td>
+          <img src="../images/forest2.png" alt="Image 8" data-id="galaxyart">
+          <button class="favorite-button" data-id="galaxyart">Favorite</button>
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <h2>Your Favorites</h2>
+    <div id="favorites-section">
+      <p>No favorites yet.</p>
+    </div>
+  </footer> 
+</body>
+</html>

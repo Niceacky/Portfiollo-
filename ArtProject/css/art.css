@@ -1,0 +1,396 @@
+main {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Custom font */
+   
+
+}
+
+figure {
+    padding: 3px;
+    margin: 10px;
+    border: 1px solid gray;
+    box-shadow: 1px 0px 5px gray,
+        -1px 0px 5px gray;
+    border-radius: 1%;
+    flex-basis: 25%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure>img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+figcaption {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 3px 5px 2px black;
+}
+
+#fig-css {
+    flex-grow: 1;
+}
+
+#fig-js {
+    flex-grow: 2;
+}
+
+
+.bg {
+    /* change the height to vh */
+    height: 10vh;
+    min-height: 1vh; /* 250px */
+    max-height: 25vh;
+    background-color: rgb(5, 5, 5);
+}
+
+
+
+#img-bg-3 {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.666), rgba(255, 255, 255, 0.134) 50%, rgba(255, 255, 255, 0.666)), 
+    url("../images/art2background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    height: 350px;
+    position: relative;
+    background-position: center top;
+    filter: contrast(120%) brightness(110%);
+    border-radius: 60px;
+    border: 4px solid #000000;
+    filter: contrast(120%) brightness(100%) saturate(100%);
+}
+
+
+
+.bg-text {
+    position: absolute; 
+    top: 13%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: white; /* Text color */
+    font-size: 95px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 5px 5px 8px black; /* Add a shadow for better readability */
+    text-align: center;
+    text-rendering: optimizeSpeed;
+    text-decoration: underline;
+    text-decoration-color: white; /* Underline color */
+    text-decoration-thickness: 2px; /* Thickness of the underline */
+    text-underline-offset: 5px; /* Space between text and underline */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Custom font */
+
+}
+
+
+nav {
+    background-color: #5a5a5a99; /* Dark background for the nav bar */
+    padding: 10px 0; /* Add some vertical padding */
+    width: 100%; /* Make the nav bar span the full width */
+    position: relative; /* Ensure it stays in place */
+    margin: 0; /* Remove any default margin */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    text-shadow: 5px 5px 8px black; 
+    font-size: 30px;
+    color: white;
+    border-radius: 30px;
+    border: 4px solid #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Custom font */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Spread items evenly across the screen */
+    align-items: center; /* Center items vertically */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Change text color to yellow */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 20px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: 6px 6px 10px black; 
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #4a4a4a53; /* Highlight background on hover */
+    color: #ffffff; /* Change text color to dark gray on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Add shadow for a fancy effect */
+}
+
+.image-table,
+.image-grid {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow images to wrap to the next row */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    gap: 20px; /* Add spacing between images */
+    text-align: center; /* Center-align the content */
+}
+
+.image-table img,
+.image-grid img,
+figure > img {
+    width: 500px; /* Set a fixed width */
+    height: 500px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image-table td,
+.image-grid div {
+    text-align: center; /* Center-align the images */
+    padding: 10px; /* Add spacing around images */
+}
+
+.image-table img:hover,
+.image-grid img:hover,
+figure > img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a more pronounced shadow */
+    filter: brightness(1.0); /* Brighten the image slightly */
+}
+.favorite-button {
+    display: inline-block; /* Make the button inline */
+    margin-top: 10px; /* Add spacing above the button */
+    padding: 10px 15px; /* Add padding for better clickability */
+    font-size: 1rem; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* White text */
+    background-color: #9a9a9a; /* Green background */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.favorite-button:hover {
+    background-color: #232323b5; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Fixed size for art pieces */
+figure {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the image and button */
+    margin: 10px; /* Add spacing around each figure */
+    text-align: center; /* Center-align the text */
+}
+
+/* Style for the images */
+figure img {
+    width: 100%; /* Allow images to take full width */
+    height: auto;
+    object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Favorites section images */
+#favorites-section img {
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Style for the favorite button */
+figure .favorite-button {
+    margin-top: 10px; /* Add spacing between the image and button */
+    padding: 10px 15px; /* Add padding for better clickability */
+    font-size: 1rem; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* White text */
+    background-color: #9a9a9a; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+figure .favorite-button:hover {
+    background-color: #232323b5; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Hover effect for images */
+figure img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a more pronounced shadow */
+    filter: brightness(1.1); /* Brighten the image slightly */
+}
+#favorites-section .images-container {
+    display: flex; /* Use Flexbox for images */
+    flex-wrap: wrap; /* Allow images to wrap to the next row if needed */
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add spacing between images */
+}
+
+#favorites-section {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: nowrap; /* Prevent images from wrapping to the next row */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    gap: 20px; /* Add spacing between images */
+    padding: 20px; /* Add padding around the section */
+    overflow-x: auto; /* Allow horizontal scrolling if images exceed the container width */
+    
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style for favorite images */
+#favorites-section img {
+    width: 300px; /* Set a smaller fixed width for favorites */
+    height: 300px; /* Set a smaller fixed height for favorites */
+    object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Hover effect for favorite images */
+#favorites-section img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a more pronounced shadow */
+    filter: brightness(1.1); /* Brighten the image slightly */
+}
+h2 {
+    font-size: 10rem; /* Set the font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    color: #333; /* Set the text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Custom font */
+    background: none;
+}
+
+@media (max-width: 600px) {
+    /* General adjustments for mobile */
+    body, main, nav, footer {
+        width: 100%; /* Ensure full width */
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove default padding */
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+
+    /* Navigation adjustments */
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 15px; /* Add spacing between links */
+        align-items: center; /* Center-align the links */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 10px 15px; /* Add padding for better clickability */
+        text-align: center; /* Center-align the text */
+    }
+
+    /* Image table adjustments */
+    .image-table {
+        display: flex; /* Use Flexbox for layout */
+        flex-wrap: wrap; /* Allow images to wrap to the next row */
+        justify-content: center; /* Center the images horizontally */
+        gap: 10px; /* Add spacing between images */
+    }
+
+    .image-table td {
+        display: inline-block; /* Treat table cells as inline blocks */
+        padding: 5px;
+        text-align: center; /* Center-align the content */
+    }
+
+    .image-table img {
+        width: 150px; /* Set a fixed width for images */
+        height: 150px; /* Set a fixed height for images */
+        object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    /* Figure adjustments */
+    figure {
+        width: 100%; /* Allow figures to span full width */
+        margin: 0 auto 10px; /* Center the figure and add spacing below */
+        text-align: center; /* Center-align the content */
+    }
+
+    figure img {
+        width: 150px; /* Set a fixed width for images */
+        height: 150px; /* Set a fixed height for images */
+        object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    figure .favorite-button {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+        margin: 0 auto; /* Center the button */
+    }
+
+    /* Footer adjustments */
+    footer .bottom-image img {
+        width: 150px; /* Set a fixed width for the footer image */
+        height: 150px; /* Set a fixed height for the footer image */
+        object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    /* Favorites section adjustments */
+    #favorites-section {
+        display: flex; /* Use Flexbox for layout */
+        flex-wrap: wrap; /* Allow favorite images to wrap to the next row */
+        justify-content: center; /* Center the images horizontally */
+        gap: 10px; /* Adjust spacing between images */
+        padding: 10px; /* Reduce padding for smaller screens */
+        text-align: center; /* Center-align the content */
+    }
+
+    #favorites-section img {
+        width: 120px; /* Set a fixed width for favorite images */
+        height: 120px; /* Set a fixed height for favorite images */
+        object-fit: cover; /* Ensure the image fills the area while maintaining proportions */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    /* Background text adjustments */
+    .bg-text {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        text-align: center; /* Ensure text is centered */
+        padding: 10px; /* Add padding for better spacing */
+    }
+    h2 {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+        margin-bottom: 15px; /* Adjust spacing below the heading */
+    }
+}
